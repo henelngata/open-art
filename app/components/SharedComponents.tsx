@@ -225,7 +225,6 @@ function HotBid() {
           alt="fire emoji"
         />
       </section>
-     
     </section>
   );
 }
@@ -268,13 +267,41 @@ function HotCollection() {
             Hot Collection
           </p>
         </section>
+      </section>
+      <section className=" red grid grid-cols-2 ">
         {/* iages */}
         <Image
-          src="/images/hot.svg"
-          width={26}
-          height={25.24}
+          className=" relative"
+          src="/images/1.svg"
+          width={200}
+          height={235}
           alt="fire emoji"
         />
+        <Image src="/images/1.svg" width={165} height={200} alt="fire emoji" />
+        <Image src="/images/1.svg" width={165} height={200} alt="fire emoji" />
+        <Image src="/images/1.svg" width={165} height={200} alt="fire emoji" />
+      </section>
+      <section>
+        <p className="red my-2 text-lg font-bold leading-8 w-100 flex justify-between items-center">
+          Water and sunflower
+          <span className=" border-2 border-gray-300 rounded-lg p-1 ">
+            30 items
+          </span>
+        </p>
+      </section>
+      <section className="flex items-center">
+        <Image
+          className="rounded-full mr-3"
+          src="/images/creator.svg"
+          width={40}
+          height={40}
+          alt="creators image"
+        />
+        <section>
+          <p className="leading-7 font-bold font-18 text-sm">
+            By Pawel Czerwinski
+          </p>
+        </section>
       </section>
     </section>
   );
