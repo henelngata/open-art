@@ -273,8 +273,8 @@ function HotCollection() {
         <Image
           className=" relative"
           src="/images/1.svg"
-          width={200}
-          height={235}
+          width={165}
+          height={200}
           alt="fire emoji"
         />
         <Image src="/images/1.svg" width={165} height={200} alt="fire emoji" />
@@ -290,20 +290,56 @@ function HotCollection() {
         </p>
       </section>
       <section className="flex items-center">
-        <Image
-          className="rounded-full mr-3"
-          src="/images/creator.svg"
-          width={40}
-          height={40}
-          alt="creators image"
-        />
-        <section>
-          <p className="leading-7 font-bold font-18 text-sm">
-            By Pawel Czerwinski
-          </p>
+        <section className="flex items-center w-5/6">
+          <Image
+            className="rounded-full mr-3"
+            src="/images/creator.svg"
+            width={40}
+            height={40}
+            alt="creators image"
+          />
+          <section>
+            <p className="leading-7 font-bold  text-sm">By Pawel Czerwinski</p>
+          </section>
+        </section>
+        <section className="w-2/6 flex  justify-around px-7 py-2 rounded-xl border-2 border-gray-ph">
+          <Image
+            src="/images/heart.svg"
+            width={24}
+            height={24}
+            alt="creators image"
+          />
+          <p className="inline-block">Follow</p>
         </section>
       </section>
+      <ViewLink />
     </section>
   );
 }
-export { Header, HeroText, SearchBar, NFTCard, HotNFT };
+
+function ViewLink() {
+  return (
+    <Link
+      className="p-2 text-center rounded-md block border-blue-b border-2 font-bold text-xl"
+      href="#"
+    >
+      View more collection
+    </Link>
+  );
+}
+function Footer() {
+  return (
+    <footer>
+      <section>
+        <h1>The New Creative Economy</h1>
+        <Link
+          className="font-bold text-xl text-slate-200  p-4 text-center rounded-md block bg-gradient"
+          href="#"
+        >
+          Place a bid{" "}
+        </Link>
+      </section>
+    </footer>
+  );
+}
+export { Header, HeroText, SearchBar, NFTCard, HotNFT,Footer};
