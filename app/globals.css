@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* img{
+  width: 100%;
+} */
+ body{
+  background:  #F8F8F8;
+ }
+.red{
+  border: 2px solid red;
+}
+.flex{
+  display: flex;
+}
+.content-center{
+  justify-content: center;
+}
+.flex-row{
+  flex-direction: row;
+}
+.font-18{
+  font-size: 1.125em;
+}
+.font-24{
+  font-size: 1.5em;
+}
+.w-100{
+  width: 100%;
+}
+.bg-gradient{
+  background: linear-gradient(114deg, #0038F5 0%, #9F03FF 100%);
+}
+.w-50{
+  width: 50%;
+}
