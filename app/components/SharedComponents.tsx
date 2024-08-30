@@ -164,7 +164,7 @@ function LiveAuction() {
 
 function Sold() {
   return (
-    <section className="pl-4 text-xl text-center py-3 rounded-3xl  font-normal bg-gray-sold">
+    <section className="pl-4 text-xl text-center py-3 rounded-3xl  font-normal bg-gray-sold mb-4 text-slate-600">
       Sold For <span className="text-2xl font-bold leading-7">2.00 ETH</span>
     </section>
   );
@@ -172,7 +172,7 @@ function Sold() {
 
 function CurrentBid() {
   return (
-    <section className=" py-3 rounded-3xl  flex justify-between px-7 border-2 border-black">
+    <section className=" py-3 rounded-3xl  flex justify-between px-7 border-2 border-black mb-3">
       <section>
         <section>
           <span
@@ -360,4 +360,15 @@ function Footer() {
     </footer>
   );
 }
-export { Header, HeroText, SearchBar, NFTCard, HotNFT, Footer, ReserveDetails, LiveAuction };
+export {
+  Header,
+  HeroText,
+  SearchBar,
+  NFTCard,
+  HotNFT,
+  Footer,
+  ReserveDetails,
+  LiveAuction,
+  Sold,
+  CurrentBid,
+};
