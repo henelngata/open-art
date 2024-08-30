@@ -4,6 +4,7 @@ import {
   Footer,
   Header,
   HeroText,
+  HotBid,
   HotNFT,
   LiveAuction,
   NFTCard,
@@ -22,15 +23,7 @@ export default function Home() {
       <ReserveDetails />
       <NFTCard />
       <LiveAuction />
-      <NFTCard />
-      <Sold />
-      <NFTCard />
-      <Sold />
-      <NFTCard />
-      <Sold />
-      <NFTCard />
-      <CurrentBid />
-      <HotNFT />
+      <HotBid/>
       <Footer />
     </main>
   );

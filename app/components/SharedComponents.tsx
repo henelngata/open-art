@@ -147,18 +147,23 @@ function ViewButton() {
 
 function LiveAuction() {
   return (
-    <section className="flex justify-between items-center mb-4">
-      <section className="flex justify-between items-center ">
-        <div className={styles.ellipseDiv} />
-        <p className="text-2xl font-bold">Live auctions</p>
+    <>
+      <section className="flex justify-between items-center mb-4">
+        <section className="flex justify-between items-center ">
+          <div className={styles.ellipseDiv} />
+          <p className="text-2xl font-bold">Live auctions</p>
+        </section>
+        <Link
+          className=" text-base  px-4 py-2 text-center rounded-md block border-gray-400 border-2 "
+          href="#"
+        >
+          View artwork
+        </Link>
       </section>
-      <Link
-        className=" text-base  px-4 py-2 text-center rounded-md block border-gray-400 border-2 "
-        href="#"
-      >
-        View artwork
-      </Link>
-    </section>
+      <section>
+        <NFTCard />
+      </section>
+    </>
   );
 }
 
@@ -194,38 +199,46 @@ function CurrentBid() {
 
 function HotBid() {
   return (
-    <section className="flex justify-between">
+    <section>
       <section className="flex justify-between">
-        <Image
-          src="/images/fire.svg"
-          width={18.2}
-          height={19.24}
-          alt="fire emoji"
-        />
-        <p className="inline-block text-2xl font-bold leading-7 ml-2">
-          Hot bid
-        </p>
+        <section className="flex justify-between">
+          <Image
+            src="/images/fire.svg"
+            width={18.2}
+            height={19.24}
+            alt="fire emoji"
+          />
+          <p className="inline-block text-2xl font-bold leading-7 ml-2">
+            Hot bid
+          </p>
+        </section>
+        <section className="w-1/6 flex justify-between">
+          <Image
+            src="/images/back-arrow.svg"
+            width={24}
+            height={24}
+            alt="fire emoji"
+          />
+          <Image
+            src="/images/forward-arrow.svg"
+            width={24}
+            height={24}
+            alt="fire emoji"
+          />
+        </section>
       </section>
-      <section className="w-1/6 flex justify-between">
-        <Image
-          src="/images/back-arrow.svg"
-          width={24}
-          height={24}
-          alt="fire emoji"
-        />
-        <Image
-          src="/images/forward-arrow.svg"
-          width={24}
-          height={24}
-          alt="fire emoji"
-        />
-      </section>
+      <div className=" w-auto flex border-2 border-black  overflow-hidden justify-evenly">
+        <HotNFT />
+        <HotNFT />
+        <HotNFT />
+        <HotNFT />
+      </div>
     </section>
   );
 }
 function HotNFT() {
   return (
-    <section>
+    <section className="red w-100 mr-10">
       <Image
         className="rounded-2xl w-100"
         src="/images/thanos.jpg"
@@ -242,7 +255,6 @@ function HotNFT() {
       <p className="text-sm">
         Highest bid <span className="font-bold">1.00ETH</span>
       </p>
-      <HotCollection />
     </section>
   );
 }
@@ -371,4 +383,5 @@ export {
   LiveAuction,
   Sold,
   CurrentBid,
+  HotBid,
 };
