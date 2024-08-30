@@ -1,15 +1,25 @@
 import Image from "next/image";
-import { Footer, Header, HeroText, HotNFT, NFTCard, SearchBar } from "./components/SharedComponents";
+import {
+  Footer,
+  Header,
+  HeroText,
+  HotNFT,
+  NFTCard,
+  ReserveDetails,
+  SearchBar,
+} from "./components/SharedComponents";
 
 export default function Home() {
   return (
-    <>
+    <main className="p-4 px-7">
       <Header />
       <HeroText />
       <SearchBar />
       <NFTCard />
+      <ReserveDetails />
+      <NFTCard />
       <HotNFT />
       <Footer />
-    </>
+    </main>
   );
 }

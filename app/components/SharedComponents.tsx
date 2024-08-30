@@ -6,7 +6,7 @@ function Header() {
     //logo
     //the different menus
 
-    <header className="red flex justify-between">
+    <header className="flex justify-between">
       <section>
         <Image
           src="/images/logo.svg"
@@ -30,19 +30,19 @@ function Header() {
 function HeroText() {
   return (
     <section>
-      <p className="text-center text-[#555555] text-lg font-bold leading-7 tracking-wide">
+      <p className="text-center text-[#555555] text-lg font-bold leading-7 tracking-wide my-7">
         Discover, collect, and sell
+        <span className="text-center w-[262.96px]  text-[#222222] text-[32px] font-bold  leading-9 tracking-wide">
+          <br></br> Your Digital Art
+        </span>
       </p>
-      <h1 className="w-[262.96px] text-center text-[#222222] text-[32px] font-bold  leading-9 tracking-wide">
-        Your Digital Art
-      </h1>
     </section>
   );
 }
 
 function SearchBar() {
   return (
-    <section className="flex ">
+    <section className="flex p-2 bg-gray-in mb-7">
       <section className="w-10 p-1">
         <Image
           src="/images/search.svg"
@@ -53,7 +53,7 @@ function SearchBar() {
       </section>
 
       <input
-        className="w-full p-1 bg-"
+        className="w-full p-1 bg-gray-in"
         type="text"
         name=""
         id=""
@@ -75,7 +75,7 @@ function SearchBar() {
 function NFTCard() {
   return (
     //nft
-    <section>
+    <section className="red mb-8 bg-white p-2 rounded-xl">
       <Image
         className="rounded-2xl w-100"
         src="/images/thanos.jpg"
@@ -83,8 +83,8 @@ function NFTCard() {
         height={399.21}
         alt="art image"
       />
-      <p className="font-24 font-bold leading-8">Silent Wave</p>
-      <section className="red flex justify-between">
+      <p className="font-24 font-bold leading-8 py-3">Silent Wave</p>
+      <section className="flex justify-between">
         <section className="flex">
           <Image
             className="rounded-full mr-3"
@@ -106,13 +106,6 @@ function NFTCard() {
           alt="heart icon"
         />
       </section>
-      <ReserveDetails />
-      <BidButton />
-      <ViewButton />
-      <LiveAuction />
-      <Sold />
-      <CurrentBid />
-      <HotBid />
     </section>
   );
 }
@@ -120,18 +113,20 @@ function NFTCard() {
 function ReserveDetails() {
   return (
     <section>
-      <p className="text-base font-normal">
+      <p className="text-base font-normal mb-4">
         Reserve Price
         <span className="text-2xl font-bold leading-7">1.50 ETH</span>
         <span className="font-bold text-gray-500"> $2,683.73</span>
       </p>
+      <BidButton />
+      <ViewButton />
     </section>
   );
 }
 function BidButton() {
   return (
     <Link
-      className="font-bold text-xl text-slate-200  p-4 text-center rounded-md block bg-gradient"
+      className="font-bold text-xl text-slate-200  p-4 text-center rounded-md block bg-gradient mb-3"
       href="#"
     >
       Place a bid{" "}
@@ -142,7 +137,7 @@ function BidButton() {
 function ViewButton() {
   return (
     <Link
-      className="font-bold text-xl  p-4 text-center rounded-md block border-blue-b border-2"
+      className="font-bold text-xl  p-4 text-center rounded-md block border-blue-b border-2 mb-6"
       href="#"
     >
       View artwork
@@ -336,10 +331,33 @@ function Footer() {
           className="font-bold text-xl text-slate-200  p-4 text-center rounded-md block bg-gradient"
           href="#"
         >
-          Place a bid{" "}
+          Place a bid
         </Link>
+        <Link
+          className="p-2 text-center rounded-md block border-blue-b border-2 font-bold text-xl"
+          href="#"
+        >
+          View more collection
+        </Link>
+      </section>
+      <section>
+        <section>
+          <p>Instagram</p>
+          <p>Twitter</p>
+          <p>Discord</p>
+          <p>Blog</p>
+        </section>
+        <section>
+          <p>About</p>
+          <p>Community Guidelines</p>
+          <p>Terms of Service</p>
+          <p>Privacy</p>
+          <p>Careers</p>
+          <p>Help</p>
+        </section>
+        <p>© 2021 Openart</p>
       </section>
     </footer>
   );
 }
-export { Header, HeroText, SearchBar, NFTCard, HotNFT,Footer};
+export { Header, HeroText, SearchBar, NFTCard, HotNFT, Footer, ReserveDetails };
