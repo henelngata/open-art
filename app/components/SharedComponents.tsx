@@ -30,7 +30,7 @@ function Header() {
 function HeroText() {
   return (
     <section>
-      <p className="text-center text-[#555555] text-lg font-bold leading-7 tracking-wide my-4">
+      <p className="text-center text-[#555555] text-lg font-bold leading-7 tracking-wide my-2">
         Discover, collect, and sell
         <span className="text-center w-[262.96px]  text-[#222222] text-[32px] font-bold  leading-9 tracking-wide">
           <br></br> Your Digital Art
