@@ -75,7 +75,7 @@ function SearchBar() {
 function NFTCard() {
   return (
     //nft
-    <section className="red mb-8 bg-white p-2 rounded-xl">
+    <section className="mb-8 bg-white p-2 rounded-xl">
       <Image
         className="rounded-2xl w-100"
         src="/images/thanos.jpg"
@@ -147,13 +147,13 @@ function ViewButton() {
 
 function LiveAuction() {
   return (
-    <section className="flex justify-between items-center">
+    <section className="flex justify-between items-center mb-4">
       <section className="flex justify-between items-center ">
         <div className={styles.ellipseDiv} />
         <p className="text-2xl font-bold">Live auctions</p>
       </section>
       <Link
-        className=" text-base  p-2 text-center rounded-md block border-blue-b border-2 "
+        className=" text-base  px-4 py-2 text-center rounded-md block border-gray-400 border-2 "
         href="#"
       >
         View artwork
@@ -360,4 +360,4 @@ function Footer() {
     </footer>
   );
 }
-export { Header, HeroText, SearchBar, NFTCard, HotNFT, Footer, ReserveDetails };
+export { Header, HeroText, SearchBar, NFTCard, HotNFT, Footer, ReserveDetails, LiveAuction };
