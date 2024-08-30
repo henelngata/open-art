@@ -11,7 +11,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="p-4 px-7">
+    <main className="p-4 px-4">
       <Header />
       <HeroText />
       <SearchBar />
