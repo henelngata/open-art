@@ -42,7 +42,7 @@ function HeroText() {
 
 function SearchBar() {
   return (
-    <section className="flex p-2 bg-gray-in mb-7">
+    <section className="flex p-2 bg-gray-in mb-3">
       <section className="w-10 p-1">
         <Image
           src="/images/search.svg"
