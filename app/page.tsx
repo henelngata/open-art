@@ -16,7 +16,7 @@ import {
 export default function Home() {
   return (
     <main className="p-4 bg-gray-100">
-      <Header />
+     
       <HeroText />
       <SearchBar />
       <NFTCard />
@@ -24,7 +24,7 @@ export default function Home() {
       <NFTCard />
       <LiveAuction />
       <HotBid/>
-      <Footer />
+     
     </main>
   );
 }

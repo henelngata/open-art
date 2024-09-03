@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {epilogue} from "./assets/fonts"
 import "./globals.css";
+import { Footer, Header } from "./components/SharedComponents";
 
 
 
@@ -16,7 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={epilogue.className}>{children}</body>
+      <body className={epilogue.className}>
+        <Header />
+        {children}
+       
+      </body>
     </html>
   );
 }
